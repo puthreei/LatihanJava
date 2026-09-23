@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-23 12:52:08 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtMExBTjhGN0k7MjAyNi0wOS0yMzsxMjo0NzoyMyBQTTsyNjMz"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtMExBTjhGN0k7MjAyNi0wOS0yMzsxMjo1MjowOCBQTTsxOzI3NDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="status" type="String" array="False" size=""/>
+            <output expression="&quot;Masukkan status member (GOLD/SILVER/BRONZE/REGULAR)&quot;" newline="True"/>
+            <input variable="status"/>
+            <if expression="status=&quot;GOLD&quot;">
+                <then>
+                    <output expression="&quot;Diskon 20%&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="status=&quot;SILVER&quot;">
+                        <then>
+                            <output expression="&quot;Diskon 15%&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="status=&quot;BRONZE&quot;">
+                                <then>
+                                    <output expression="&quot;Diskon 10%&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Tidak ada diskon(0%)&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
